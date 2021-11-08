@@ -26,3 +26,5 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/', 'NewsController@index');
+Route::get('admin/profile/create',' ProfileController@add');
+Route::get('admin/profile/edit','ProfileController@edit');
