@@ -23,8 +23,7 @@
         <!-- Styles -->
         {{-- Laravel標準で用意されているCSSを読み込みます --}}
         <link href="{{ secure_asset('css/app.css') }}" rel="stylesheet">
-        {{-- この章の後半で作成するCSSを読み込みます --}}
-        <link href="{{ secure_asset('css/admin.css') }}" rel="stylesheet">
+        <link href="{{ secure_asset('css/profile.css') }}" rel="stylesheet">
     </head>
     <body>
         <div id="app">
@@ -46,7 +45,7 @@
 
                         <!-- Right Side Of Navbar -->
                         <ul class="navbar-nav ml-auto">
-                           @guest
+                            @guest
                             <li><a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a></li>
                         {{-- ログインしていたらユーザー名とログアウトボタンを表示 --}}
                         @else
@@ -67,7 +66,7 @@
                                     </form>
                                 </div>
                             </li>
-                            @endguest 
+                            @endguest
                         </ul>
                     </div>
                 </div>
