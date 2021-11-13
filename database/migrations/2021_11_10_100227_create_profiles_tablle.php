@@ -13,7 +13,7 @@ class CreateProfilesTablle extends Migration
      */
     public function up()
     {
-        Schema::create('profiles_tablle', function (Blueprint $table) {
+        Schema::create('profiles', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('name');
             $table->string('gender');
@@ -30,6 +30,6 @@ class CreateProfilesTablle extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('profiles_tablle');
+        Schema::dropIfExists('profiles');
     }
 }
