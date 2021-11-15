@@ -15,6 +15,7 @@
                     @endif
 
                     You are logged in!
+                    <p>hello</p>
                 </div>
             </div>
         </div>
